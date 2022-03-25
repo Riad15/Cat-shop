@@ -1,0 +1,65 @@
+[
+    {
+        "id": 101,
+        "name": "Mr. jack",
+        "age": "2 Years",
+        "price": 5000,
+        "pic": "./images/cat1.jpg"
+    },
+    {
+        "id": 102,
+        "name": "Billu",
+        "age": "1.5 Years",
+        "price": 5000,
+        "pic": "./images/cat2.jpg"
+    },
+    {
+        "id": 103,
+        "name": "Jonkar vai",
+        "age": "1.8 Years",
+        "price": 5000,
+        "pic": "./images/cat3.jpg"
+    },
+    {
+        "id": 104,
+        "name": "Don",
+        "age": "",
+        "price": 5000,
+        "pic": "./images/cat4.jpg"
+    },
+    {
+        "id": 105,
+        "name": "Jiku",
+        "age": "2.10 Years",
+        "price": 5000,
+        "pic": "./images/cat5.jpg"
+    },
+    {
+        "id": 106,
+        "name": "shahrukh khan",
+        "age": "3 Years",
+        "price": 5000,
+        "pic": "./images/cat6.jpg"
+    },
+    {
+        "id": 107,
+        "name": "Sallu",
+        "age": "1.2 Years",
+        "price": 5000,
+        "pic": "./images/cat7.jpg"
+    },
+    {
+        "id": 108,
+        "name": "sapik khan",
+        "age": "1.9 Years",
+        "price": 5000,
+        "pic": "./images/cat8.jpg"
+    },
+    {
+        "id": 109,
+        "name": "dipjol",
+        "age": "2.5 Years",
+        "price": 5000,
+        "pic": "./images/cat9.jpg"
+    }
+]
