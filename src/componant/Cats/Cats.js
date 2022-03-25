@@ -12,11 +12,14 @@ const Cats = () => {
 
     return (
         <div className='cat-market'>
-            <div className='cat-container'>
-                {
-                    cats.map(cat => <Cat key={cat.id} cats={cat} ></Cat>)
-                }
+            <div>
+                <h1>Never had you seen such a beautiful cat...</h1>
+                <div className='cat-container'>
+                    {
+                        cats.map(cat => <Cat key={cat.id} cats={cat} ></Cat>)
+                    }
 
+                </div>
             </div>
             <div className='cat-selection'>
                 <h1>Selection your favorite Cat</h1>

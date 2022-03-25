@@ -1,3 +1,5 @@
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Cat.css'
 
@@ -12,7 +14,7 @@ const Cat = (props) => {
                 <p>Age: {age}  || <span> Gender: {gender}</span></p>
                 <h4>Price: {price}</h4>
             </div>
-            <p className='btn'>add to card</p>
+            <p className='btn'>add to card <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon> </p>
         </div>
     );
 };
