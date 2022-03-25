@@ -13,6 +13,9 @@
     height: 290px;
     border-radius: 12px;
 }
+.cat-info{
+    text-align: center;
+}
 .btn{
     text-align: center;
     font-weight: 500;

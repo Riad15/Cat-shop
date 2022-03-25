@@ -9,9 +9,13 @@
     grid-template-columns: repeat(3, 1fr);
     margin: 5px 5px;
 }
-.cat-selection{
-    background-color: darksalmon;
+.heading h1{
+    text-align: center;
 }
+.cat-selection{
+    background-color:lightsteelblue ;
+}
+
 
 @media screen and (max-width:620px){
     .cat-container{

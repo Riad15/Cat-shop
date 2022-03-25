@@ -1,0 +1,18 @@
+.icon{
+    color:gold;
+    margin-left: 110px;
+}
+.list{
+    display: flex;
+    
+}
+.cat-name{
+    margin-left: 15px;
+    font-weight: 600;
+}
+.cat-img{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

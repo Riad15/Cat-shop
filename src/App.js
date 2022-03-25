@@ -6,7 +6,7 @@ import Cats from './componant/Cats/Cats';
 function App() {
 
   return (
-    <div className="App">
+    <div >
       <Cats></Cats>
     </div>
   );
