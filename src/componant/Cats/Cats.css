@@ -1,0 +1,14 @@
+.cat-market{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 40px;
+
+}
+.cat-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5px 5px;
+}
+.cat-selection{
+    background-color: darksalmon;
+}
