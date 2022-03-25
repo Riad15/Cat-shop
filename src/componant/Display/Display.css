@@ -16,3 +16,9 @@
     height: 50px;
     border-radius: 50%;
 }
+.choice-btn{
+    padding: 8px 15px;
+   font-weight: 500;
+   border-radius: 6px;
+   margin-left: 70px;
+}

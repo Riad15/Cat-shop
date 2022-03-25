@@ -1,11 +1,21 @@
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import './Display.css'
 
 const Display = (props) => {
+    const [catName, setName] = useState([]);
+    // const [cats, setCats] = useState([]);
     const { displayCat } = props;
-    console.log(displayCat);
+    // setCats(displayCat);
+    // console.log(cats);
+    const count = displayCat.length;
+    const randomClick = (count) => {
+        const number = Math.floor(Math.random() * count);
+        const selectionCat = displayCat[number];
+        setName(selectionCat)
+    }
+
 
     return (
         <div>
@@ -19,6 +29,8 @@ const Display = (props) => {
 
                 </li>)
             }
+            <h1 style={{}}>you can take {catName.name}</h1>
+            <button className='choice-btn' onClick={() => { randomClick(count) }}> chose 1 for me </button>
         </div>
     );
 };
