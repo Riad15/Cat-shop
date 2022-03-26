@@ -1,20 +1,19 @@
-import { faSmile } from '@fortawesome/free-solid-svg-icons';
+import { faColonSign, faSmile } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import ChoseOne from '../choseOne/ChoseOne';
 import './Display.css'
 
 const Display = (props) => {
-    const [catName, setName] = useState([]);
-    // const [cats, setCats] = useState([]);
+    // const [catName, setName] = useState([]);
     const { displayCat } = props;
-    // setCats(displayCat);
-    // console.log(cats);
-    const count = displayCat.length;
-    const randomClick = (count) => {
-        const number = Math.floor(Math.random() * count);
-        const selectionCat = displayCat[number];
-        setName(selectionCat)
-    }
+
+    // const count = displayCat.length;
+    // const randomClick = () => {
+    //     const number = Math.floor(Math.random() * count);
+    //     const selectionCat = displayCat[number];
+    //     setName(selectionCat)
+    // }
 
 
     return (
@@ -29,8 +28,10 @@ const Display = (props) => {
 
                 </li>)
             }
-            <h1 style={{}}>you can take {catName.name}</h1>
-            <button className='choice-btn' onClick={() => { randomClick(count) }}> chose 1 for me </button>
+
+            {/* <button className='choice-btn' onClick={() => { removeItem() }}> remove </button> */}
+
+
         </div>
     );
 };

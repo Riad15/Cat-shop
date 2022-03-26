@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Cat from '../Cat/Cat';
+import ChoseOne from '../choseOne/ChoseOne';
 import Display from '../Display/Display';
+import RemoveItem from '../RemoveItem/RemoveItem';
 import './Cats.css'
 
 const Cats = () => {
     const [cats, setCates] = useState([]);
     const [displayCat, setDisplayCat] = useState([]);
+    const [catName, setName] = useState([]);
     useEffect(() => {
         fetch('cat-dat.json')
             .then(res => res.json())
@@ -16,9 +19,21 @@ const Cats = () => {
         // console.log(cat);
         let newCat = [];
         newCat = [...displayCat, cat];
+
         setDisplayCat(newCat)
     }
+    const count = displayCat.length;
+    const randomClick = () => {
+        const number = Math.floor(Math.random() * count);
+        const selectionCat = displayCat[number];
+        setName(selectionCat)
+    }
 
+    const removeItem = () => {
+        setDisplayCat([]);
+        setName([]);
+
+    }
     return (
         <div className='cat-market'>
             <div>
@@ -36,7 +51,10 @@ const Cats = () => {
                 </div>
             </div>
             <div className='cat-selection'>
-                <Display displayCat={displayCat} ></Display>
+                <Display removeItem={removeItem} displayCat={displayCat} ></Display>
+                <ChoseOne cat={catName}
+                    randomClick={randomClick}></ChoseOne>
+                <RemoveItem removeItem={removeItem}></RemoveItem>
             </div>
 
         </div>
