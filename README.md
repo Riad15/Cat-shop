@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Cat-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Cat-App](https://cat-app3.netlify.app/).
 
 ## Available Scripts
 
